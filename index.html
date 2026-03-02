@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Barra de navegacion -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-md  gap-3">
+            <a class="navbar-brand ms-lg-5" href="#">
+                <img src="assets/img/burger-huge-svgrepo-com.svg" alt="" width="40" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 gap-3 py-3">
+                    <li class="nav-item mx-auto">
+                        <a class="nav-link" style="font-weight: bold;" href="#">INICIO</a>
+                    </li>
+                    <li class="nav-item mx-auto">
+                        <a class="nav-link" style="font-weight: bold;" href="#">CARTA</a>
+                    </li>
+                    <li class="nav-item mx-auto">
+                        <a class="nav-link" style="font-weight: bold;" href="#">RESERVAS</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav mb-2 mb-lg-0 gap-3 py-3 ms-auto">
+                    <li class="nav-item mx-auto">
+                        <a class="nav-link" href="#">Localizar Tienda</a>
+                    </li>
+                    <li class="nav-item mx-auto">
+                        <a class="nav-link" href="#">Iniciar Sesión</a>
+                    </li>
+                    <li class="nav-item mx-auto">
+                        <a class="nav-link" href="#">Regístrate</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Seccion Heroe -->
+        <section class="d-flex align-items-center justify-content-center text-center text-white" style="
+            background: url('assets/img/lidye-1Shk_PkNkNw-unsplash.jpg') center center / cover no-repeat;
+            min-height: 70vh;
+        ">
+            <div class="container">
+                <h1 class="display-3 display-md-2 display-lg-1 fw-bold">
+                    Tu punto de encuentro favorito.
+                </h1>
+                <p class="lead">
+                    Ven a disfrutar de comida rica con amigos o familia. Reserva tu mesa en un par de clics.
+                </p>
+            </div>
+        </section>
+
+        <!-- Menu Cartas -->
+        <section class="container my-5">
+            <h2 class="text-center mb-4">Nuestro Menú</h2>
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card h-100">
+                        <img src="assets/img/burger-and-sauce-beef-burger-3000px2-1.png" class="card-img-top " alt="Placeholder" style="height:240px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Fondue King</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card h-100">
+                        <img src="assets/img/img-prod-burger-1.png" class="card-img-top " alt="Placeholder" style="height:240px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">CheeStacker</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card h-100">
+                        <img src="assets/img/Mediterraneo-King-Simple-alta-1.png" class="card-img-top " alt="Placeholder" style="height:240px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">American Grill</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card h-100">
+                        <img src="assets/img/pngtree-delicious-and-testy-cheese-burger-png-image_16763714.png" class="card-img-top " alt="Placeholder" style="height:240px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Whopper</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center mt-4">
+                <a class="btn btn-primary" href="#" role="button">Ver Menú Completo</a>
+            </div>
+        </section>
+
+        <!-- Formulario de reserva -->
+        <section class="container my-5">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8 col-lg-6 shadow p-5 rounded-4 bg-light">
+                    <h2 class="text-center mb-4">Haz tu Reserva</h2>
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nombre completo</label>
+                            <input type="text" class="form-control" id="name" placeholder="Tu nombre">
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="date" class="form-label">Fecha</label>
+                                <input type="date" class="form-control" id="date">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="guests" class="form-label">Número de personas</label>
+                                <input type="number" class="form-control" id="guests" min="1" max="20"
+                                    placeholder="1">
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="form-label">Correo electrónico</label>
+                            <input type="email" class="form-control" id="email"
+                                placeholder="ejemplo@correo.com">
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary btn-lg" onclick="mostrarReserva()">Reservar Ahora</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-dark text-white py-5 mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <h5>Explora</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white text-decoration-none">Política de Privacidad</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">Trabaja con nosotros</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">Preguntas Frecuentes</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <h5>Contacto</h5>
+                        <p>Calle Falsa 123, Ciudad</p>
+                        <p>+56 9 1234 5678</p>
+                        <p>Lun-Dom: 12:00 - 23:00</p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <h5>Síguenos</h5>
+                        <div class="d-flex gap-3">
+                            <a href="#" class="text-white">Instagram</a>
+                            <a href="#" class="text-white">Facebook</a>
+                            <a href="#" class="text-white">Twitter</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="assets/scripts/form.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
